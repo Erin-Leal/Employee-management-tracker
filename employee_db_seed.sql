@@ -23,3 +23,35 @@ CREATE TABLE employee (
   managed_by_id INT
 );
 
+INSERT INTO department (dep_name)
+VALUES 
+("sales"), 
+("it"), 
+("general");
+
+INSERT INTO roles (title, salary, department_id)
+VALUES 
+("sales manager", 21.40, 1),
+("sales assistant", 13.90, 1),
+("sales janitor", 11.50, 1),
+("it manager", 21.20, 2),
+("it assistant", 13.45, 2),
+("it janitor", 11.25, 2),
+("general manager", 21.00, 3),
+("general assistant", 13.00, 3),
+("general janitor", 11.00, 3);
+
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES
+("John", "Jacob", 1),
+("Naoko", "Akagi", 4),
+("Jack", "Black", 7),
+("Carol", "Ina", 2),
+("Rei", "Ayanami", 5),
+("Jeff", "Jefferson", 8),
+("The", "Hulk", 3),
+("Steve", "Jobs", 3),
+("Salty", "Dog", 6),
+("Corn", "Man", 6),
+("Rodger", "Dingo", 9),
+("Nigel", "Thornberry", 9);
