@@ -55,3 +55,18 @@ VALUES
 ("Corn", "Man", 6),
 ("Rodger", "Dingo", 9),
 ("Nigel", "Thornberry", 9);
+
+SELECT department.dep_id, department.dep_name, roles.title, roles.salary
+FROM department
+INNER JOIN roles
+ON department.dep_id = roles.department_id;
+
+SELECT roles.title, employee.role_id, employee.first_name, employee.last_name
+FROM roles
+INNER JOIN employee
+ON roles.rol_id = employee.role_id;
+
+SELECT employee.first_name, employee.last_name, roles.title
+FROM employee
+LEFT JOIN roles
+ON employee.emp_id = employee.managed_by_id;
